@@ -29,170 +29,181 @@ const GalleryPage = () => {
   }, [selectedImage]);
 
   const categories = [
-    { id: 'all', label: 'All Stories', icon: Eye, count: 24 },
-    { id: 'education', label: 'Education', icon: BookOpen, count: 8 },
-    { id: 'healthcare', label: 'Healthcare', icon: Stethoscope, count: 6 },
-    { id: 'community', label: 'Community', icon: Users, count: 5 },
-    { id: 'environment', label: 'Environment', icon: Leaf, count: 3 },
-    { id: 'leadership', label: 'Leadership', icon: Crown, count: 2 }
+    { id: 'all', label: 'All Stories', icon: Eye, count: 12 },
+    { id: 'education', label: 'Education', icon: BookOpen, count: 4 },
+    { id: 'healthcare', label: 'Healthcare', icon: Stethoscope, count: 3 },
+    { id: 'community', label: 'Community', icon: Users, count: 3 },
+    { id: 'environment', label: 'Environment', icon: Leaf, count: 2 },
   ];
 
   const galleryItems = [
     {
       id: 1,
-      title: "School Reconstruction in Bamenda",
-      shortDesc: "Rebuilding hope through education",
-      fullDesc: "After years of conflict, the Alliance reconstructed three primary schools in Bamenda, providing safe learning spaces for over 800 children. The project included modern facilities, trained teachers, and educational materials to ensure quality learning.",
+      title: "Girls' School Reconstruction in Bamenda",
+      shortDesc: "Rebuilding safe learning spaces for girls",
+      fullDesc: "I’m Human Org reconstructed three primary schools in Bamenda, providing safe, modern learning environments for over 800 girls, complete with educational materials and trained teachers focused on gender equity.",
       category: "education",
       location: "Bamenda, Northwest Region",
-      date: "March 2024",
-      impact: "800+ children",
-      tags: ["reconstruction", "primary education", "infrastructure"],
+      date: "March 2025",
+      impact: "800+ girls educated",
+      tags: ["girls education", "school reconstruction", "Cameroon"],
       photographer: "Sarah Mbah",
-      featured: true
+      featured: true,
+      image: "https://imgs.search.brave.com/WjwdQi0sb9hW4N2Qn6AEjSeHfIIXP8zE4yayCxKBN-Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTMx/NjQzMTUwL3ZlY3Rv/ci9waWN0dXJlLWlj/b24uanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVN0LWdwUm41/OGVJYThFREFIcG5f/eU80Q1paQW5HRDZ3/S3BsbjlsM1ozT2s9"
     },
     {
       id: 2,
-      title: "Mobile Health Clinic Outreach",
-      shortDesc: "Healthcare reaches the unreachable",
-      fullDesc: "Our mobile clinics have traveled to over 50 remote villages in the Southwest Region, providing essential medical services, vaccinations, and health education to communities cut off by the ongoing crisis.",
+      title: "Mobile Health Clinics for Women",
+      shortDesc: "Delivering healthcare to rural mothers",
+      fullDesc: "Our mobile clinics reached 50+ villages, providing maternal health services, vaccinations, and health education to women and children in remote areas of Cameroon affected by conflict.",
       category: "healthcare",
       location: "Southwest Region",
-      date: "January 2024",
-      impact: "5,000+ patients treated",
-      tags: ["mobile clinic", "rural healthcare", "prevention"],
+      date: "January 2025",
+      impact: "5,000+ women served",
+      tags: ["maternal health", "mobile clinic", "rural access"],
       photographer: "Dr. John Fru",
-      featured: false
+      featured: false,
+      image: "https://imgs.search.brave.com/WjwdQi0sb9hW4N2Qn6AEjSeHfIIXP8zE4yayCxKBN-Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTMx/NjQzMTUwL3ZlY3Rv/ci9waWN0dXJlLWlj/b24uanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVN0LWdwUm41/OGVJYThFREFIcG5f/eU80Q1paQW5HRDZ3/S3BsbjlsM1ozT2s9"
     },
     {
       id: 3,
       title: "Women's Leadership Summit",
-      shortDesc: "Empowering the next generation of leaders",
-      fullDesc: "The annual Women's Leadership Summit brought together 200 women from across Southern Cameroons to discuss governance, economic empowerment, and the role of women in the restoration movement.",
-      category: "leadership",
+      shortDesc: "Empowering women to lead change",
+      fullDesc: "The 2025 Women’s Leadership Summit united 200 women in Buea to foster skills in governance, entrepreneurship, and advocacy, empowering them to drive community change in Cameroon.",
+      category: "community",
       location: "Buea, Southwest Region",
-      date: "February 2024",
+      date: "February 2025",
       impact: "200 women leaders",
-      tags: ["women empowerment", "leadership", "governance"],
+      tags: ["women empowerment", "leadership", "advocacy"],
       photographer: "Mary Ngole",
-      featured: true
+      featured: true,
+      image: "https://imgs.search.brave.com/WjwdQi0sb9hW4N2Qn6AEjSeHfIIXP8zE4yayCxKBN-Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTMx/NjQzMTUwL3ZlY3Rv/ci9waWN0dXJlLWlj/b24uanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVN0LWdwUm41/OGVJYThFREFIcG5f/eU80Q1paQW5HRDZ3/S3BsbjlsM1ozT2s9"
     },
     {
       id: 4,
-      title: "Community Garden Project",
-      shortDesc: "Growing food security together",
-      fullDesc: "Established 15 community gardens across Lebialem, teaching sustainable farming practices and providing fresh produce for families affected by the economic impact of the crisis.",
+      title: "Community Gardens for Families",
+      shortDesc: "Growing food security for communities",
+      fullDesc: "Launched 15 community gardens in Lebialem to support families, especially women-led households, with sustainable farming practices and access to fresh produce.",
       category: "environment",
       location: "Lebialem, Southwest Region",
-      date: "April 2024",
-      impact: "150 families",
-      tags: ["food security", "sustainable farming", "community development"],
+      date: "April 2025",
+      impact: "150 families supported",
+      tags: ["food security", "sustainable farming", "women-led"],
       photographer: "Peter Tabe",
-      featured: false
+      featured: false,
+      image: "https://imgs.search.brave.com/WjwdQi0sb9hW4N2Qn6AEjSeHfIIXP8zE4yayCxKBN-Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTMx/NjQzMTUwL3ZlY3Rv/ci9waWN0dXJlLWlj/b24uanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVN0LWdwUm41/OGVJYThFREFIcG5f/eU80Q1paQW5HRDZ3/S3BsbjlsM1ozT2s9"
     },
     {
       id: 5,
-      title: "Digital Literacy Program",
-      shortDesc: "Connecting communities to the world",
-      fullDesc: "Launched computer literacy centers in 12 towns, training youth and adults in basic computer skills, internet usage, and digital communication to bridge the technology gap.",
+      title: "Digital Literacy for Youth",
+      shortDesc: "Equipping girls with tech skills",
+      fullDesc: "Established digital literacy centers in 12 towns, training 500+ girls and young women in computer skills and internet usage to bridge the digital divide in Cameroon.",
       category: "education",
       location: "Multiple locations",
-      date: "May 2024",
-      impact: "500+ trained",
-      tags: ["digital literacy", "technology", "skills training"],
+      date: "May 2025",
+      impact: "500+ girls trained",
+      tags: ["digital literacy", "girls education", "technology"],
       photographer: "Grace Ayuk",
-      featured: false
+      featured: false,
+      image: "https://imgs.search.brave.com/WjwdQi0sb9hW4N2Qn6AEjSeHfIIXP8zE4yayCxKBN-Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTMx/NjQzMTUwL3ZlY3Rv/ci9waWN0dXJlLWlj/b24uanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVN0LWdwUm41/OGVJYThFREFIcG5f/eU80Q1paQW5HRDZ3/S3BsbjlsM1ozT2s9"
     },
     {
       id: 6,
-      title: "Emergency Medical Response",
-      shortDesc: "When every second counts",
-      fullDesc: "Our emergency response team provided critical medical aid during the recent cholera outbreak, setting up treatment centers and conducting health awareness campaigns.",
+      title: "Emergency Maternal Care",
+      shortDesc: "Saving mothers in crisis",
+      fullDesc: "Our emergency response team provided critical maternal care during a health crisis, setting up treatment centers and awareness campaigns to protect women and newborns.",
       category: "healthcare",
       location: "Kumba, Southwest Region",
-      date: "June 2024",
-      impact: "300+ lives saved",
-      tags: ["emergency response", "cholera prevention", "public health"],
+      date: "June 2025",
+      impact: "300+ mothers saved",
+      tags: ["maternal care", "emergency response", "public health"],
       photographer: "Dr. Agnes Mbu",
-      featured: true
+      featured: true,
+      image: "https://imgs.search.brave.com/WjwdQi0sb9hW4N2Qn6AEjSeHfIIXP8zE4yayCxKBN-Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTMx/NjQzMTUwL3ZlY3Rv/ci9waWN0dXJlLWlj/b24uanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVN0LWdwUm41/OGVJYThFREFIcG5f/eU80Q1paQW5HRDZ3/S3BsbjlsM1ozT2s9"
     },
     {
       id: 7,
-      title: "Youth Vocational Training",
-      shortDesc: "Building skills for the future",
-      fullDesc: "Vocational training centers in carpentry, tailoring, and mechanics have trained 400+ young people, providing them with marketable skills despite educational disruptions.",
+      title: "Vocational Training for Girls",
+      shortDesc: "Skills for a brighter future",
+      fullDesc: "Vocational centers trained 400+ girls in tailoring and entrepreneurship, empowering them with marketable skills to achieve financial independence in Cameroon.",
       category: "education",
       location: "Mamfe, Southwest Region",
-      date: "July 2024",
-      impact: "400+ youth trained",
-      tags: ["vocational training", "youth empowerment", "skills development"],
+      date: "July 2025",
+      impact: "400+ girls trained",
+      tags: ["vocational training", "girls empowerment", "skills"],
       photographer: "Paul Eta",
-      featured: false
+      featured: false,
+      image: "https://imgs.search.brave.com/WjwdQi0sb9hW4N2Qn6AEjSeHfIIXP8zE4yayCxKBN-Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTMx/NjQzMTUwL3ZlY3Rv/ci9waWN0dXJlLWlj/b24uanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVN0LWdwUm41/OGVJYThFREFIcG5f/eU80Q1paQW5HRDZ3/S3BsbjlsM1ozT2s9"
     },
     {
       id: 8,
-    title: "Clean Water Initiative",
-      shortDesc: "Pure water, pure hope",
-      fullDesc: "Drilled 25 boreholes and repaired 40 existing water points, providing clean drinking water to over 10,000 people in rural communities across both regions.",
+      title: "Clean Water for Communities",
+      shortDesc: "Providing safe drinking water",
+      fullDesc: "Installed 25 boreholes to provide clean water to 10,000+ people, prioritizing women and children in rural Cameroon communities.",
       category: "environment",
       location: "Multiple communities",
-      date: "August 2024",
+      date: "August 2025",
       impact: "10,000+ beneficiaries",
-      tags: ["clean water", "sanitation", "public health"],
+      tags: ["clean water", "sanitation", "community health"],
       photographer: "Thomas Ngwa",
-      featured: true
+      featured: true,
+      image: "https://imgs.search.brave.com/WjwdQi0sb9hW4N2Qn6AEjSeHfIIXP8zE4yayCxKBN-Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTMx/NjQzMTUwL3ZlY3Rv/ci9waWN0dXJlLWlj/b24uanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVN0LWdwUm41/OGVJYThFREFIcG5f/eU80Q1paQW5HRDZ3/S3BsbjlsM1ozT2s9"
     },
     {
       id: 9,
-      title: "Cultural Heritage Preservation",
-      shortDesc: "Preserving our identity",
-      fullDesc: "Documented traditional dances, stories, and customs through video and audio recordings, ensuring Southern Cameroonian culture is preserved for future generations.",
+      title: "Cultural Preservation for Women",
+      shortDesc: "Honoring women’s cultural roles",
+      fullDesc: "Documented traditional practices led by women, preserving Cameroon’s cultural heritage through stories and performances for future generations.",
       category: "community",
       location: "Multiple villages",
-      date: "September 2024",
-      impact: "50+ traditions documented",
-      tags: ["cultural preservation", "heritage", "documentation"],
+      date: "September 2025",
+      impact: "50+ traditions preserved",
+      tags: ["cultural preservation", "women’s heritage", "documentation"],
       photographer: "Chief Samuel Ndive",
-      featured: false
+      featured: false,
+      image: "https://imgs.search.brave.com/WjwdQi0sb9hW4N2Qn6AEjSeHfIIXP8zE4yayCxKBN-Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTMx/NjQzMTUwL3ZlY3Rv/ci9waWN0dXJlLWlj/b24uanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVN0LWdwUm41/OGVJYThFREFIcG5f/eU80Q1paQW5HRDZ3/S3BsbjlsM1ozT2s9"
     },
     {
       id: 10,
       title: "Widow Support Network",
-      shortDesc: "Supporting those who have lost most",
-      fullDesc: "Established support networks for widows affected by the conflict, providing financial assistance, counseling, and skills training to help them rebuild their lives.",
+      shortDesc: "Empowering widows to rebuild",
+      fullDesc: "Created support networks for widows, offering financial aid, counseling, and skills training to help them regain independence and support their children.",
       category: "community",
       location: "Wum, Northwest Region",
-      date: "October 2024",
+      date: "September 2025",
       impact: "180 widows supported",
-      tags: ["widow support", "grief counseling", "economic empowerment"],
+      tags: ["widow empowerment", "counseling", "skills training"],
       photographer: "Elizabeth Che",
-      featured: false
+      featured: false,
+      image: "https://imgs.search.brave.com/WjwdQi0sb9hW4N2Qn6AEjSeHfIIXP8zE4yayCxKBN-Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTMx/NjQzMTUwL3ZlY3Rv/ci9waWN0dXJlLWlj/b24uanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVN0LWdwUm41/OGVJYThFREFIcG5f/eU80Q1paQW5HRDZ3/S3BsbjlsM1ozT2s9"
     },
     {
       id: 11,
-      title: "Student Scholarship Program",
-      shortDesc: "Education as a pathway to freedom",
-      fullDesc: "Awarded 150 scholarships to brilliant students from affected families, enabling them to continue their secondary and university education despite financial constraints.",
+      title: "Scholarships for Girls",
+      shortDesc: "Education for a brighter future",
+      fullDesc: "Awarded 150 scholarships to girls from low-income families, enabling them to pursue secondary and university education in Cameroon.",
       category: "education",
       location: "Multiple schools",
-      date: "November 2024",
-      impact: "150 students",
-      tags: ["scholarships", "higher education", "student support"],
+      date: "August 2025",
+      impact: "150 girls supported",
+      tags: ["scholarships", "girls education", "student support"],
       photographer: "Prof. Mary Tanyi",
-      featured: true
+      featured: true,
+      image: "https://imgs.search.brave.com/WjwdQi0sb9hW4N2Qn6AEjSeHfIIXP8zE4yayCxKBN-Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTMx/NjQzMTUwL3ZlY3Rv/ci9waWN0dXJlLWlj/b24uanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVN0LWdwUm41/OGVJYThFREFIcG5f/eU80Q1paQW5HRDZ3/S3BsbjlsM1ozT2s9"
     },
     {
       id: 12,
-      title: "Mental Health Awareness",
-      shortDesc: "Healing invisible wounds",
-      fullDesc: "Conducted mental health awareness sessions and provided counseling services to help community members cope with trauma and stress from ongoing conflicts.",
+      title: "Mental Health for Women",
+      shortDesc: "Healing trauma for women",
+      fullDesc: "Provided mental health workshops and counseling for women affected by conflict, helping them cope with trauma and build resilience.",
       category: "healthcare",
       location: "Nkambe, Northwest Region",
-      date: "December 2024",
-      impact: "800+ counseled",
-      tags: ["mental health", "trauma counseling", "community healing"],
+      date: "July 2025",
+      impact: "800+ women counseled",
+      tags: ["mental health", "trauma counseling", "women’s health"],
       photographer: "Dr. Patricia Nkeng",
-      featured: false
+      featured: false,
+      image: "https://imgs.search.brave.com/WjwdQi0sb9hW4N2Qn6AEjSeHfIIXP8zE4yayCxKBN-Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTMx/NjQzMTUwL3ZlY3Rv/ci9waWN0dXJlLWlj/b24uanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVN0LWdwUm41/OGVJYThFREFIcG5f/eU80Q1paQW5HRDZ3/S3BsbjlsM1ozT2s9"
     }
   ];
 
@@ -247,21 +258,21 @@ const GalleryPage = () => {
             </div>
             
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
-              Stories of Hope & <span className="text-red-300">Resilience</span>
+              Stories of Hope & <span className="text-red-300">Empowerment</span>
             </h1>
             
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-red-100 max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed">
-              Witness the transformative impact of the Southern Cameroons Alliance across communities, one story at a time.
+              Discover how I’m Human Org transforms lives of women, girls, and children in Cameroon through education, healthcare, and community empowerment.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm">
               <div className="flex items-center space-x-2">
                 <Heart className="h-4 sm:h-5 w-4 sm:w-5 text-red-300" />
-                <span>24 Impact Stories</span>
+                <span>12 Impact Stories</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 sm:h-5 w-4 sm:w-5 text-red-300" />
-                <span>50+ Locations</span>
+                <span>Multiple Locations</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Users className="h-4 sm:h-5 w-4 sm:w-5 text-red-300" />
@@ -284,6 +295,7 @@ const GalleryPage = () => {
                     className="w-full pl-9 sm:pl-10 pr-4 py-2 sm:py-3 border-2 border-gray-300 rounded-xl focus:border-red-600 focus:outline-none text-sm sm:text-base"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
+                    aria-label="Search impact stories"
                   />
                 </div>
                 
@@ -293,7 +305,7 @@ const GalleryPage = () => {
                     className={`px-3 sm:px-4 py-2 sm:py-3 transition-colors ${
                       viewMode === 'grid' ? 'bg-red-600 text-white' : 'text-gray-600 hover:bg-gray-50'
                     }`}
-                    aria-label="Grid view"
+                    aria-label="Switch to grid view"
                   >
                     <Grid className="h-4 sm:h-5 w-4 sm:w-5" />
                   </button>
@@ -302,7 +314,7 @@ const GalleryPage = () => {
                     className={`px-3 sm:px-4 py-2 sm:py-3 transition-colors ${
                       viewMode === 'list' ? 'bg-red-600 text-white' : 'text-gray-600 hover:bg-gray-50'
                     }`}
-                    aria-label="List view"
+                    aria-label="Switch to list view"
                   >
                     <List className="h-4 sm:h-5 w-4 sm:w-5" />
                   </button>
@@ -356,6 +368,10 @@ const GalleryPage = () => {
                       item.featured ? 'ring-2 ring-red-600/20' : ''
                     }`}
                     onClick={() => setSelectedImage(item)}
+                    role="button"
+                    tabIndex={0}
+                    aria-label={`View story: ${item.title}`}
+                    onKeyDown={(e) => e.key === 'Enter' && setSelectedImage(item)}
                   >
                     {item.featured && (
                       <div className="bg-gradient-to-r from-red-600 to-red-700 text-white text-center py-1 sm:py-2 text-xs sm:text-sm font-semibold">
@@ -364,11 +380,11 @@ const GalleryPage = () => {
                     )}
                     
                     <div className="relative h-48 sm:h-64 bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-blue-500/10 group-hover:from-red-500/20 group-hover:to-blue-500/20 transition-all duration-500" />
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="text-gray-600 font-semibold text-base sm:text-lg">Impact Story {item.id}</span>
-                      </div>
-                      
+                      <img 
+                        src={item.image || '/images/fallback-story.jpg'} 
+                        alt={item.title} 
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
                       <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <div className="text-white text-center">
                           <Eye className="h-8 sm:h-12 w-8 sm:w-12 mx-auto mb-2 transform scale-0 group-hover:scale-100 transition-transform duration-300" />
@@ -378,7 +394,7 @@ const GalleryPage = () => {
                       
                       <div className="absolute top-3 sm:top-4 left-3 sm:left-4">
                         <span className="bg-white/90 text-gray-800 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs font-semibold backdrop-blur-sm">
-                          {categories.find(c => c.id === item.category)?.label}
+                          {categories.find(c => c.id === item.category)?.label || 'Story'}
                         </span>
                       </div>
                     </div>
@@ -420,17 +436,21 @@ const GalleryPage = () => {
                     key={item.id}
                     className="group bg-white border-2 border-gray-200 rounded-2xl overflow-hidden hover:border-red-600 transition-all duration-500 cursor-pointer"
                     onClick={() => setSelectedImage(item)}
+                    role="button"
+                    tabIndex={0}
+                    aria-label={`View story: ${item.title}`}
+                    onKeyDown={(e) => e.key === 'Enter' && setSelectedImage(item)}
                   >
                     <div className="flex flex-col sm:flex-row">
                       <div className="sm:w-1/3 h-48 sm:h-64 bg-gradient-to-br from-gray-100 to-gray-200 relative overflow-hidden">
-                        <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-blue-500/10" />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <span className="text-gray-600 font-semibold text-base sm:text-lg">Impact Story {item.id}</span>
-                        </div>
-                        
+                        <img 
+                          src={item.image || '/images/fallback-story.jpg'} 
+                          alt={item.title} 
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
                         <div className="absolute top-3 sm:top-4 left-3 sm:left-4">
                           <span className="bg-white/90 text-gray-800 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs font-semibold">
-                            {categories.find(c => c.id === item.category)?.label}
+                            {categories.find(c => c.id === item.category)?.label || 'Story'}
                           </span>
                         </div>
                       </div>
@@ -497,19 +517,19 @@ const GalleryPage = () => {
               className="relative w-full max-w-2xl sm:max-w-4xl lg:max-w-5xl bg-white rounded-2xl overflow-hidden shadow-2xl max-h-[95vh] sm:max-h-[90vh] lg:max-h-[85vh]"
               role="dialog"
               aria-modal="true"
-              aria-label="Impact Story Modal"
+              aria-label={`Impact Story: ${selectedImage.title}`}
             >
               <button
                 onClick={() => setSelectedImage(null)}
                 className="absolute top-3 sm:top-4 right-3 sm:right-4 z-20 bg-white/90 hover:bg-white text-gray-800 rounded-full p-1.5 sm:p-2 transition-all duration-300 shadow-lg"
-                aria-label="Close modal"
+                aria-label="Close story modal"
               >
                 <X className="h-5 sm:h-6 w-5 sm:w-6" />
               </button>
 
               <button
                 onClick={prevImage}
-                className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white text-gray-800 rounded-full p-1.5 sm:p-2 transition-all duration-300 shadow-lg sm:flex hidden"
+                className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white text-gray-800 rounded-full p-1.5 sm:p-2 transition-all duration-300 shadow-lg hidden sm:flex"
                 aria-label="Previous story"
               >
                 <ChevronLeft className="h-5 sm:h-6 w-5 sm:w-6" />
@@ -517,28 +537,35 @@ const GalleryPage = () => {
               
               <button
                 onClick={nextImage}
-                className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white text-gray-800 rounded-full p-1.5 sm:p-2 transition-all duration-300 shadow-lg sm:flex hidden"
+                className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white text-gray-800 rounded-full p-1.5 sm:p-2 transition-all duration-300 shadow-lg hidden sm:flex"
                 aria-label="Next story"
               >
                 <ChevronRight className="h-5 sm:h-6 w-5 sm:w-6" />
               </button>
 
               <div className="flex flex-col lg:flex-row h-full max-h-[95vh] sm:max-h-[90vh] lg:max-h-[85vh]">
-                <div className="lg:w-2/3 h-48 sm:h-64 lg:h-auto bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-blue-500/10" />
-                  <span className="relative text-gray-600 font-semibold text-base sm:text-lg lg:text-xl">
-                    Impact Story {selectedImage.id}
-                  </span>
+                <div className="lg:w-2/3 h-48 sm:h-64 lg:h-auto relative overflow-hidden">
+                  <img 
+                    src={selectedImage.image || '/images/fallback-story.jpg'} 
+                    alt={selectedImage.title} 
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute top-3 sm:top-4 left-3 sm:left-4">
+                    <span className="bg-white/90 text-gray-800 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs font-semibold backdrop-blur-sm">
+                      {categories.find((c) => c.id === selectedImage.category)?.label || 'Story'}
+                    </span>
+                  </div>
                 </div>
 
                 <div className="lg:w-1/3 p-3 sm:p-4 lg:p-6 overflow-y-auto lg:max-h-[85vh] flex-1 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
                   <div className="flex items-center justify-between mb-3 sm:mb-4">
                     <span className="bg-red-100 text-red-800 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs sm:text-sm font-semibold">
-                      {categories.find((c) => c.id === selectedImage.category)?.label}
+                      {categories.find((c) => c.id === selectedImage.category)?.label || 'Story'}
                     </span>
                     <button
                       className="text-gray-400 hover:text-red-600 transition-colors duration-300"
-                      aria-label="Share story"
+                      aria-label={`Share story: ${selectedImage.title}`}
+                      onClick={() => navigator.share?.({ title: selectedImage.title, url: window.location.href }) || alert('Share functionality not supported')}
                     >
                       <Share2 className="h-4 sm:h-5 w-4 sm:w-5" />
                     </button>
@@ -569,7 +596,7 @@ const GalleryPage = () => {
 
                     <div className="flex items-center justify-between py-2 sm:py-3 border-b border-gray-200">
                       <span className="text-gray-600 font-medium flex items-center text-xs sm:text-sm">
-                        <Calendar className="h-4 sm:h-5 w-4 sm:w-5 mr-1.5 sm:mr-2 flex-shrink-0" />
+                        <Calendar className="h-4 sm:h-5 w-4 sm:h-5 mr-1.5 sm:mr-2 flex-shrink-0" />
                         Date
                       </span>
                       <span className="text-gray-900 font-semibold text-xs sm:text-sm">
@@ -611,9 +638,13 @@ const GalleryPage = () => {
                     </div>
                   </div>
 
-                  <button className="w-full bg-red-600 text-white py-2 sm:py-3 lg:py-4 rounded-xl hover:bg-red-700 font-semibold transition-all duration-300 text-sm sm:text-base">
+                  <a
+                    href="/donate"
+                    className="w-full bg-red-600 text-white py-2 sm:py-3 lg:py-4 rounded-xl hover:bg-red-700 font-semibold transition-all duration-300 text-sm sm:text-base text-center"
+                    aria-label={`Support ${selectedImage.title}`}
+                  >
                     Support This Cause
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -635,7 +666,6 @@ const GalleryPage = () => {
           scrollbar-color: #d1d5db #f3f4f6;
         }
         .scrollbar-track-gray-100 {
-          /* For Webkit browsers */
           &::-webkit-scrollbar {
             width: 8px;
           }
