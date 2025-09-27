@@ -26,7 +26,7 @@ const Header = () => {
                 {/* Logo Image */}
                 <div className="relative">
                   <img 
-                    src="/vite.svg" 
+                    src="/logo.jpg" 
                     alt="  Logo" 
                     className="h-12 w-auto border-2 border-red-600 rounded-lg p-1" 
                   />
